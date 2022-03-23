@@ -8,11 +8,10 @@
 
 body {
   position: relative;
-}
-
-.blueBg {
-  position: absolute;
-  z-index: -1;
+  background-image: url(/ICONS/blue-background.svg);
+  background-size: 60vw 150vh;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 @media screen and (min-width: 768px) {
@@ -22,6 +21,12 @@ body {
   }
   body main section.left p {
     width: 500px;
+  }
+}
+
+@media screen and (max-width: 1034px) {
+  body {
+    background-size: 500px 1000px;
   }
 }
 
@@ -124,5 +129,16 @@ main section.left p {
     width: 40vw;
     height: 40vw;
   }
+}
+
+footer {
+  margin-top: 8rem;
+  margin-left: 2rem;
+}
+
+footer img {
+  padding: 1rem;
+  width: 80px;
+  height: 80px;
 }
 /*# sourceMappingURL=style.css.map */
