@@ -1,0 +1,172 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #90bfcd;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#first {
+  stroke-dasharray: 350px;
+  stroke-dashoffset: 350px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards;
+          animation: fadeInside 0.6s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 380px;
+  stroke-dashoffset: 380px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.4s;
+          animation: fadeInside 0.6s ease-in forwards 0.4s;
+}
+
+#third {
+  stroke-dasharray: 357px;
+  stroke-dashoffset: 357px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.8s;
+          animation: fadeInside 0.6s ease-in forwards 0.8s;
+}
+
+#fourth {
+  stroke-dasharray: 95px;
+  stroke-dashoffset: 95px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.2s;
+          animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#fifth {
+  stroke-dasharray: 350px;
+  stroke-dashoffset: 350px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.6s;
+          animation: fadeInside 0.6s ease-in forwards 1.6s;
+}
+
+#sixth {
+  stroke-dasharray: 355px;
+  stroke-dashoffset: 355px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2s;
+          animation: fadeInside 0.6s ease-in forwards 2s;
+}
+
+#seventh {
+  stroke-dasharray: 472px;
+  stroke-dashoffset: 472px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.4s;
+          animation: fadeInside 0.6s ease-in forwards 2.4s;
+}
+
+#eighth {
+  stroke-dasharray: 226px;
+  stroke-dashoffset: 226px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.8s;
+          animation: fadeInside 0.6s ease-in forwards 2.8s;
+}
+
+#ninth {
+  stroke-dasharray: 390px;
+  stroke-dashoffset: 390px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 3.2s;
+          animation: fadeInside 0.6s ease-in forwards 3.2s;
+}
+
+#tenth {
+  stroke-dasharray: 350px;
+  stroke-dashoffset: 350px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 3.6s;
+          animation: fadeInside 0.6s ease-in forwards 3.6s;
+}
+
+#eleventh {
+  stroke-dasharray: 1501px;
+  stroke-dashoffset: 1501px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.4s;
+          animation: fadeInside 0.6s ease-in forwards 1.4s;
+}
+
+#twelveth {
+  stroke-dasharray: 1149px;
+  stroke-dashoffset: 1149px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.8s;
+          animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#thirteenth {
+  stroke-dasharray: 1166px;
+  stroke-dashoffset: 1166px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.2s;
+          animation: fadeInside 0.6s ease-in forwards 2.2s;
+}
+
+#fourteenth {
+  stroke-dasharray: 1405px;
+  stroke-dashoffset: 1405px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.6s;
+          animation: fadeInside 0.6s ease-in forwards 2.6s;
+}
+
+#fifthteen {
+  stroke-dasharray: 602px;
+  stroke-dashoffset: 602px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 3s;
+          animation: fadeInside 0.6s ease-in forwards 3s;
+}
+
+#sixteenth {
+  stroke-dasharray: 1287px;
+  stroke-dashoffset: 1287px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 3.4s;
+          animation: fadeInside 0.6s ease-in forwards 3.4s;
+}
+
+#seventeenth {
+  stroke-dasharray: 1220px;
+  stroke-dashoffset: 1220px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 3.8s;
+          animation: fadeInside 0.6s ease-in forwards 3.8s;
+}
+
+@-webkit-keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+svg {
+  -webkit-animation: fillInside 0.6s ease-in forwards 3.8s;
+          animation: fillInside 0.6s ease-in forwards 3.8s;
+}
+
+@-webkit-keyframes fillInside {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes fillInside {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+/*# sourceMappingURL=Animation.css.map */
