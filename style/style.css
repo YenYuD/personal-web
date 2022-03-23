@@ -63,6 +63,51 @@ main {
       flex-wrap: wrap;
 }
 
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 300px;
+          flex: 3 1 300px;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid #5694a7;
+}
+
+main section.table table tr td {
+  padding: 1rem;
+  font-size: large;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.picture img {
+  position: relative;
+  width: 266px;
+  height: 400px;
+  margin-top: 7rem;
+  margin-left: 10rem;
+}
+
+main section.picture div.blueBack {
+  position: absolute;
+  background-color: #b0d1db;
+  width: 266px;
+  height: 400px;
+  top: 8rem;
+  right: 15rem;
+  z-index: -1;
+}
+
 main section.right {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 500px;
@@ -100,6 +145,15 @@ main section.left p {
   font-weight: 300;
   width: 80vw;
   padding: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  section.picture div.blueBack {
+    display: none;
+  }
+  body {
+    background-image: none;
+  }
 }
 
 .active {

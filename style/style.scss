@@ -59,6 +59,41 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  section.table {
+    flex: 3 1 300px;
+    padding: 3rem;
+    margin-top: 5rem;
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid #5694a7;
+        td {
+          padding: 1rem;
+          font-size: large;
+        }
+      }
+    }
+  }
+  section.picture {
+    flex: 1 1 600px;
+    img {
+      position: relative;
+      width: 266px;
+      height: 400px;
+      margin-top: 7rem;
+      margin-left: 10rem;
+    }
+    div.blueBack {
+      position: absolute;
+      background-color: #b0d1db;
+      width: 266px;
+      height: 400px;
+      top: 8rem;
+      right: 15rem;
+      z-index: -1;
+    }
+  }
+
   section.right {
     flex: 1 1 500px;
     position: relative;
@@ -87,6 +122,19 @@ main {
       width: 80vw;
       padding: 1.5rem;
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section.picture {
+    div.blueBack {
+      display: none;
+    }
+    img {
+    }
+  }
+  body {
+    background-image: none;
   }
 }
 
