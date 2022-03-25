@@ -7,27 +7,11 @@
 }
 
 body {
+  min-height: 100%;
   position: relative;
   background-image: url(/ICONS/blue-background.svg);
-  background-size: 60vw 150vh;
   background-repeat: no-repeat;
   background-position: right;
-}
-
-@media screen and (min-width: 768px) {
-  body img.blueBg {
-    top: -10vh;
-    right: 0;
-  }
-  body main section.left p {
-    width: 500px;
-  }
-}
-
-@media screen and (max-width: 1034px) {
-  body {
-    background-size: 500px 1000px;
-  }
 }
 
 header nav {
@@ -94,8 +78,8 @@ main section.picture img {
   position: relative;
   width: 266px;
   height: 400px;
-  margin-top: 7rem;
-  margin-left: 10rem;
+  top: 4rem;
+  right: -10rem;
 }
 
 main section.picture div.blueBack {
@@ -104,7 +88,7 @@ main section.picture div.blueBack {
   width: 266px;
   height: 400px;
   top: 8rem;
-  right: 15rem;
+  right: 17rem;
   z-index: -1;
 }
 
@@ -151,9 +135,6 @@ main section.left p {
   section.picture div.blueBack {
     display: none;
   }
-  body {
-    background-image: none;
-  }
 }
 
 .active {
@@ -161,6 +142,9 @@ main section.left p {
 }
 
 @media screen and (max-width: 576px) {
+  header nav {
+    margin-left: 1rem;
+  }
   header nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -183,6 +167,13 @@ main section.left p {
     width: 40vw;
     height: 40vw;
     margin-left: 2rem;
+  }
+  main section.picture img {
+    left: 2rem;
+  }
+  main section.table {
+    padding: 2rem;
+    margin-top: 1rem;
   }
 }
 
