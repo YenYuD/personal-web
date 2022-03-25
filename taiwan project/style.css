@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #9abdc2;
+  width: 100%;
+  padding: 1rem;
+}
+
+header h1 {
+  font-family: "Yuji Syuku", serif;
+  color: #443132;
+  letter-spacing: 8px;
+  line-height: normal;
+  font-weight: 100;
+}
+
+nav {
+  background-color: #33606a;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffefc6;
+  transition: all 0.25s ease;
+  padding: 15px 35px;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Yuji Syuku", serif;
+  letter-spacing: 4px;
+  font-weight: 1rem;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  background-color: #9abdc2;
+}
+
+.leftText,
+h4 {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 2rem;
+  margin-top: 40px;
+}
+
+header h3 {
+  font-family: "Yuji Syuku", serif;
+  color: #443132;
+  letter-spacing: 3px;
+  line-height: 30px;
+}
+
+main {
+  display: flex;
+}
+
+section.left,
+section.right {
+  padding: 0px 55px;
+  text-align: center;
+}
+
+.rightText {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 2rem;
+}
+
+section.right h4 {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+section.right {
+  background-color: #eef9fc;
+  width: 500px;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  color: #ffffff;
+}
+
+#taiwanpic1 {
+  width: 557px;
+  height: 328px;
+  border-radius: 30px;
+}
+
+.picText {
+  font-weight: 300;
+}

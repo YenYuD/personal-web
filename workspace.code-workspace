@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "personal web",
+			"path": "."
+		},
+		{
+			"name": "taiwan project",
+			"path": "../HTML code/taiwan project"
+		},
+		{
+			"name": "hawaii project",
+			"path": "../hawaii project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "personal web"
+	}
+}

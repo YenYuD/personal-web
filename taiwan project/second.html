@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣發展歷史網頁</title>
+    <meta name="description" content="此網站介紹台灣過去70年的經濟發展與相關政策"/>
+    <!--header font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Growth Rate'],
+          ['1960',  7.2],
+          ['1970',  11.51],
+          ['1980',  8.04],
+          ['1990',  5.54],
+          ['2000',  -1.4],
+          ['2010',  10.25],
+          ['2020',  3.36],  
+        ]);
+
+        var options = {
+          title: 'Economic Growth Rate(yoy) (%)',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./twicon/twicon.css">
+    <link rel="shortcut icon" href="./taiwanIcon.png">
+    <link rel="bookmark" href="./taiwanIcon.png">
+
+</head>
+<body>
+    <!--header-->
+    <header>
+        <h1><i class="twicon-l-youbike"></i>台灣經濟發展歷史</h1>
+        <h3>—過去70年台灣經濟發展的歷史以及相關政策</h3>
+    </header>
+
+    <!--nav bar-->
+    <nav>
+        <ul>
+            <li><a class="active" href="#"><i class="twicon-l-youbike"></i>首頁</a></li>
+            <li><a href="./second.html"><i class="twicon-l-youbike"></i>農業改革</a></li>
+            <li><a href="./third.html"><i class="twicon-l-youbike"></i>工業改革</a></li>
+            <li><a href="./fourth.html"><i class="twicon-l-youbike"></i>經濟起飛</a></li>
+            <li><a href="./fifth.html"><i class="twicon-l-youbike"></i>關於作者</a></li>
+        </ul>
+    </nav>
+
+    <!--主要內容-->
+    <main>
+        <section class="left">
+        <p class="leftText">台灣是太平洋中的一個島嶼。今天，這個島上生活著不同的人群，包括福建，客家，其他省份的中國人，台灣原住民和東南亞移民。第二次世界大戰之前，台灣是日本的殖民地。 
+            1895年，由於第一次抗日戰爭失敗，中國將台灣，遼東半島等地賜予日本。第二次世界大戰後，中華民國政府移居台灣，並開始建造該島。中華民國政府在1949年到達台灣時，
+            也有將近200萬士兵及其家屬也移居台灣。當時中華民國政府到達台灣時，有許多事情需要解決。 1945年第二次世界大戰結束時，台灣的經濟和衛生條件很低。中華民國政府對台灣的發展產生了重大影響，
+            將經濟實體從農業轉變為高科技產業。</p>
+            <br>
+            <div id="curve_chart" style="width: 900px; height: 500px"></div>
+            <br>
+            <br>
+            <img id="taiwanpic1" src="./taiwanpic1.png" alt="taiwanpic1">
+            <br>
+            <br>
+            <h3 class="picText">圖：李火增</h3>
+        </section>
+        <section class="right">
+        <h4>台灣經濟發展小知識:你知道台灣在哪裡嗎?</h4>
+        <br>
+        <p class="rightText">
+            台灣是太平洋上的一個小島。 它毗鄰中國，在島上的原住民被認為是太平洋群島南島語族語系人民的起源。
+ 台灣的陸地面積為13972公里，島上約有2380萬人居住，最主要通用語言為中文、閩南語、客家話。 
+        </p>
+        <br>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747434.874401034!2d117.84018237836642!3d23.47473123510421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ed5cb2b61c3a5%3A0xcf20ddb042be7fa0!2z6Ie654Gj!5e0!3m2!1szh-TW!2stw!4v1647002881277!5m2!1szh-TW!2stw" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    </main>
+
+    
+</body>
+</html>
